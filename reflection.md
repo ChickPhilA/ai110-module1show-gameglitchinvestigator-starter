@@ -19,10 +19,12 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-|guess of 101 | Out of bounds error | Given wrong guess, just as any other incorrect value | none |
-| | | | |
-| | | | |
-
+|Clicked on Submit Guess on first guess | Would be told to go higher, lower, or correct guess | Was told to go higher, BUT the first guess was not recorded in the index history | None |
+|Made another guess after the first guess (corresponding to the first bug) | Recorded this guess, while maintaining correct order of guesses | The very first guess (see bug above) was recorded instead of this guess | None |
+|Guess of 101 on Medium Difficulty, range 1-100 | Out of bounds error | Given wrong guess, just as any other incorrect value | None |
+|Checked the "Show Hint" box | a box, change in UI, or a pop-up would appear | no activity whatsoever | None |
+|Switched from Medium (1-100 range) to Hard (1-50) difficulty | The UI would tell me to make a guess between numbers 1 to 50 | Secret number isn't in range | None |
+|Guessed, 4, 3, 2, and 1 as being told to guess lower | 1 would be the secret number, so guessing 1 would win the game | Was told to guess even lower. It would be out of bounds error because 1 is the minimum value we can guess | None |
 ---
 
 ## 2. How did you use AI as a teammate?

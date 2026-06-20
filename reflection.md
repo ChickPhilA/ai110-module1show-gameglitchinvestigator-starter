@@ -7,6 +7,11 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
+  - Attempts count is already set to 1 upon launching the game
+    - Causes initial attempts count to be one attempt less, than the initial attempt count for each difficulty. I suspect this could be part of a 0-indexing issue
+  - No hint shows up upon clicking "Show Hint". 
+  
+
 
 **Bug Reproduction Log**
 
@@ -14,7 +19,7 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
+|guess of 101 | Out of bounds error | Given wrong guess, just as any other incorrect value | none |
 | | | | |
 | | | | |
 

@@ -75,3 +75,4 @@ Document at least 3 bugs you found. Add rows as needed.
 
 
     This project definetly highlighted the idea that AI code is not perfect, and almost will not be, as it created a broken game. However, the code that AI makes can be efficiently measured, based on how much context and constraint you provide it.
+    

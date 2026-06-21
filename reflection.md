@@ -49,12 +49,14 @@ Document at least 3 bugs you found. Add rows as needed.
 - Describe at least one test you ran (manual or using pytest) and what it showed you about your code.
   One test I ran was the secret number being too low or too high. This test case was made in respect to the secret number initially being parsed as a string, casuing a bug in comparing input values to the secret number. 100 was our test value here, because at first, when it was being lexiographically compared, '100' was less than the secret number (89 in this case), so debugging the parsing helped verify my test case to pass.
 - Did AI help you design or understand any tests? How?
-  Claude helped design and further comprehend my understandings of our test cases being wrote, knowing how values in programming can be compared in different ways (lexiographically vs numerically).
+  Claude helped design and further comprehend my understandings of our test cases being wrote, knowing how values in general programming can be compared in different ways (lexiographically vs numerically)
+
 ---
 
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+  Every time you interact with a Streamlit app (ex: clicking a button, typing in a box), the entire script reruns from top to bottom. Without session state, every rerun would reset your variables to their starting values, losing things like your score or guess history. Session state is like a persistent memory that survives each rerun, so values you care about stick around between interactions. It's a similar concept to state in React, except Streamlit reruns the whole script instead of just re-rendering a component.
 
 ---
 
@@ -62,5 +64,14 @@ Document at least 3 bugs you found. Add rows as needed.
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+
+    A habit I want to keep/reuse in future projects is delegating tasks with my AI agent, so that not one of us dominate the work in a project. I would say that I am happy with the amount of work that was distributed between Claude and I, where I identified and marked possible bugs and provided context, while Claude refactored code and we both made reviews together before anything could be changed. I also Claude to not make any changes unless I prompt that it's necessary to do so, so that it doesn't work ahead of me and only is constrained to work upon prompts I give it.
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+
+    One thing I would do differently next time when I work with AI on a coding task is to provide the whole documentation to the AI agent, but not to work ahead of itself, so that we can both work on the same pace effectively, step-by-step. This also helps my AI agent know what would be worked on next, in advance.
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+
+    This project definetly highlighted the idea that AI code is not perfect, and almost will not be, as it created a broken game. However, the code that AI makes can be efficiently measured, based on how much context and constraint you provide it.
